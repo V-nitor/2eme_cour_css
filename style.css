@@ -1,0 +1,284 @@
+/* @font-face="Importation des documents extérieur du code depuis le bureau"; font-family="Nom de la valeur de la police par url simplifié par: (./[...]) ci-dessous" en bas - Methode utile pour des gros projets */
+@font-face {
+    font-family: "font-1";
+    src: url(./Assets/Freehand-Regular.ttf);
+}
+
+/* @import url="Importation des documents extérieur du code depuis l'url internet" inexistant sur cet exercice car non-maîtrisé - Methode utile pour des petits projets */
+/* !Inactif le temps de résoudre le problème: @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
+
+/* Info:Les éléments que l'on veut modifier ou ajouter dans le fichier html sont à l'intérieur des Curly brackets en bas; La valeur ou la balise concerné se situe sur la même ligne avant le 1er Curly bracket en bas */
+/* Info:La valeur "*" en informatique veut généralement dire="Tout les éléments du dom sont concernés" en autre içi le CSS */
+
+h1 {
+    /* text-transform="Modifier le texte pour la valeur ou la balise (concerne toute les valeurs ayant le même nom) en question"; uppercase="Met tout le texte sélectionné en MAJUSCULE"; lowercase="Met tout le texte sélectionné en minuscule" en bas */
+    text-transform: uppercase;
+    /* letter-spacing="Espace entre les lettres exprimé avec le nombre correspondant + px" en bas */
+    letter-spacing: 3px;
+    /* font-size="Taille de la police ou du texte exprimé avec le nombre correspondant + rem" en bas */
+    font-size: 3rem;
+    /* Info:"1rem=16px" en haut */
+    /* color="Placer une couleur pour la valeur ou la balise en question" en bas */
+    color:rgb(30, 255, 0);
+    /* text-shadow="Placer une ombre colorée pour le texte en question"; "1er nombre px=axe x, 2eme nombre px=axe y, 3eme nombre px=flou(blur en anglais)" en bas */
+    text-shadow: 4px -5px 2px rgba(255, 208, 0, 0.895);
+    /* rgb="RedGreenBlue"; a="Opacité/transparence" en haut */
+    /* text-align="Situer la position de la valeur ou de la balise en question" en bas */
+    text-align: center;
+    /* !Inactif le temps de résoudre le problème: font-family: 'Bebas Neue', sans-serif */
+}
+
+/* first-letter="Change la première lettre d'un élément (pour faire des paragraphes par exemple)" en bas */
+h1::first-letter  {
+    color:rgb(160, 65, 150);
+    font-size: 6rem;
+    text-shadow: 4px -5px 2px rgb(45, 45, 45);
+    font-family: serif;
+}
+
+body {
+    /* background="Insérer un arrière plan en couleur (rgb) ou avec une image (url)"; no-repeat="L'image ne se répète pas en scrollant"; fixed="La face de l'image restera la même en scrollant" en bas */
+    background: url(./Assets/pexels-jacob-colvin-1757363.jpg) no-repeat fixed left;
+    /* height="Hauteur par rapport à l'écrand" en bas */
+    height: 400vh;
+    /* Info:"100vh(Virtual_Height)~Taille de l'écrand d'un ordinateur" en haut */
+    /* Info:height: 100vh + overflow: hidden="Marge Enlevé. Permet d'un côté à l'image d'occuper tout l'écrand mais d'un autre côté de ne plus pouvoir scroller" */
+}
+
+main {
+    background:rgb(255, 230, 185);
+    /* width="Largeur par rapport à l'écrand" en bas */
+    width: 83%;
+    /* Info:"vw(Virtual_Width) OU %(pour mettre la même valeur en commun peu importe la taille de l'écrand)" en haut */
+    /* min-height="Hauteur-minimal" en bas */
+    min-height: 300px;
+    /* Info:Sur les hauteurs c'est souvent en px(pixel) mais sur les largeurs c'est plus en % car tout le monde a un format d'écrand différent en fonction de ses besoins */
+    /* margin="Marge"; "Dans le sens d'une aiguille d'une montre= 1er nombre px=axe 12pm, 2eme nombre px=axe 3pm, 3eme nombre px=axe 6pm, 4eme nombre px=axe 9pm"; "Si deux valeurs seulement= 1er nombre px=axe haut&bas, 2eme nombre px=axe gauche&droite" en bas */
+    margin: 32px 1px 25px 50px;
+    /* Info:margin: 0px auto="automatique signifie même valeur à gauche et à droite. Permet que la boîte(box) soit centré sur les côtés peu importe la taille de l'écrand" */
+    /* padding="Marge intérieur. Il fonctionne comme la [margin] au-dessus" en bas */
+    padding: 5px 25px;
+    /* Info:Si on met UNE SEULE valeur dans le padding, cela calcule pour les 4 côtés pareil */
+    /* border-radius="Arrondir les bords" en bas */
+    border-radius: 30px;
+    /* box-shadow="Placer une ombre colorée pour la boîte en question" en bas */
+    box-shadow: 0px 2px 12px rgb(255, 0, 210);
+    font-family: 'Tempus Sans ITC', sans-serif;
+}
+
+ol {
+    /* font-family="Le style de la police importé depuis l'url en question annoncé en début de CSS" en bas */
+    font-family: 'font-1', cursive;
+    font-size: 22px;
+}
+
+a {
+    color:rgb(70, 230, 255)
+}
+
+/***************** Positioning *****************/
+
+footer {
+    background:rgba(230, 0, 81, 0.9);
+    width: 83%;
+    min-height: 400px;
+    margin: 32px 1px 25px 50px;
+    padding: 5px 8px;
+    box-shadow: 0px 2px 12px rgb(0, 0, 0);
+    font-family: sans-serif;
+}
+
+h2 {
+    margin: 1px 0px;
+}
+
+/* Info:Pour désigner une classe="Mettre juste un point + le nom de la class correspondante" en bas */
+.positioning {
+    /* position="Définit la manière dont un élément est positionné dans un document. À l'aide de: top, right, bottom et left une fois la valeur sélectionné"; relative="Détermine un cadre dans lequel ses éléments enfants évoluent. Dans notre cas: le 2ème [div]" en bas */
+    position: relative;
+}
+
+/* Info:Pour désigner plusieurs classes avec les mêmes propriétés, mettre une virgule après la première classe désigné puis placer la suivante en question avec un retour à la ligne en bas */
+.positioning,
+.flexbox,
+.grid {
+/* Info:Autre alternative=Classe avec nom en commun pour faire moins encombrant comme "border" en haut */
+    /* border="Bord" en bas */
+    border: 5px solid rgb(25, 0, 255);
+    /* Info:Il existe plusieurs types de [border] que [solid] à découvrir en haut */
+    padding: 3px;
+    /* margin-top="Marge indiquant plus précisément le dessus de qqch. Une valeur possible par conclusion" en bas */
+    margin-top: 4px;
+    border-radius: 2px;
+}
+
+/* Info:Pour désigner une identité="Mettre juste un hashtag + le nom de l'identité correspondante" en bas */
+#circle {
+    height: 60px;
+    width: 60px;
+    /* Info:On peut désigner le [height] et le [width] en % par rapport à son parent. Dans notre cas: le 2ème [div]" en haut */
+    background: rgb(150, 110, 0);
+    padding: 10px;
+    /* Info:border-radius: 50%="Sûr de faire un vrai cercle" en bas */
+    border-radius: 50%;
+    /* absolute="L'élément en question est retiré du flux normal et l'élément devant lui prend sa place" en bas */
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    /* z-index="Définit l'ordre dans lequel les éléments se chevauchent. Plus le nombre est élevé, plus il chevauchera des éléments" en bas */
+    z-index: 1;
+}
+
+#rectangle {
+    height: 50px;
+    width: 100px;
+    background: rgb(170, 110, 0);
+    padding: 10px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    /* transform="Modifie l'espace de coordonnées utilisé pour la mise en forme visuelle"; translateX([...]%)="Déplacement sur l'axe des abscisses"; translateY([...]%)="Déplacement sur l'axe des ordonnées" en bas */
+    transform: translateX(-50%) translateY(50%);
+    /* Info:Autre alternative="transform: translate( axeX en %, axeY en %)" en haut */
+}
+
+/***************** Flexbox *****************/
+
+.flexbox {
+    background: rgba(255, 255, 255, 0.805);
+}
+
+ul {
+    /* display="Définit le type d'affichage utilisé pour le rendu d'un élément (de bloc ou en ligne)"; flex="Les éléments qui sont séparé à la ligne se retrouveront sur la même ligne" en bas */
+    display: flex;
+    /* justify-content="Indique la façon dont l'espace doit être réparti entre et autour des éléments selon l'axe principal d'un conteneur flexible"; En fonction de sa position (space-around,space-between,space-evenly,center,start,end,left,right,top,bottom,etc.)" en bas */
+    justify-content: space-around;
+    padding: 0;
+}
+
+#bg_link {
+    /* list-style-type="Définit la forme des tirets en début de liste (square, none,etc.)" en bas */
+    list-style-type: none;
+    font-size: 0.9rem;
+    height: 180px;
+    width: 180px;
+    /* [position]/cover="L'image prend tout l'espace qui est à sa disposition. En fonction de sa position (center,left,right,top ou bottom)" en bas */
+    background: url(./Assets/pexels-flo-dahm-1643773.jpg) bottom/cover;
+    /* flex (edit)="Définit la capacité d'un élément flexible à modifier ses dimensions afin de remplir l'espace disponible de son conteneur" en bas */
+    display: flex;
+    /* Info:align-items: center + justify-content: center="Element au centre du background en question. Centrer verticalement" en bas */
+    align-items: center;
+    justify-content: center;
+}
+
+#linkcolor {
+    color:rgb(15, 0, 160);
+    background-color: rgba(240, 248, 255,0.2);
+}
+
+/***************** Grid *****************/
+
+h4 {
+    padding-left: 15px;
+}
+
+.grid-container {
+    /* grid="Définit toutes les propriétés liées aux grilles CSS. Qu'elles soient explicites ([grid-template-rows], [grid-template-columns] et [grid-template-areas]) ou implicites ([grid-auto-rows], [grid-auto-columns] et [grid-auto-flow])" en bas */
+    display: grid;
+    /* grid-template-columns="Définit les colonnes verticales"; "Dans le sens de l'enfant (et de ces petits-enfants) de la catégorie la plus haute (Dans notre cas: 1er=[img] et 2eme=[form])= 1er enfant=taille en %, 2eme enfant=taille en %; "Si moins de valeur en % désigné que nombre d'enfant= les enfants restant gardent leur position par défault (Dans notre cas: 3eme=[input type="number"])" en bas */
+    grid-template-columns: 30% 70%;
+    padding: 15px 20px 15px 10px;
+}
+
+/* Info:Si on a le moindre problème avec les images ou autres éléments (par rapport à leur changement de position en fonction de certaines circonstances par exemple), il est toujours bien de les classer en bas */
+.pict {
+    text-align: center;
+}
+
+form {
+    /* Info:"[display: grid] pour une balise, c'est ranger instantanément tous ces enfants du même étage (comme une grille) que leur position en html" en bas */
+    display: grid;
+    /* fr(Fraction)="Unité de taille variable pour les pistes de la colonne"; "Dans le MÊME sens de l'enfant de la catégorie la plus haute" en bas */
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows="Définit les colonnes horizontales"; "Dans le sens de JE N'EN SAIS FOUTREMENT RIEN PTN! ON TESTE ET ON VERRA, MERDE!! >:(" en bas */
+    /* Info:Peut faire des espaces inutiles si on ne souhaite pas que toute les balises (Dans notre cas: les [input] et [textarea]) aient les mêmes propriétés, d'où l'exemple suivant en bas */
+    grid-template-rows: 1fr;
+    /* Info:Peut faire des espaces inutiles si on ne veut pas que toute les balises aient la même propriété, d'où l'exemple suivant en bas */
+    /* grid-template-areas="Plan/Schéma de la grille avec leur valeur respective" en bas */
+    grid-template-areas: 
+      'i1 i2'
+      'ta ta'
+      'sb sb';
+}
+
+input[type="text"],
+input[type="submit"] {
+    margin: 2px;
+    height: 35px;
+    border: 3px solid rgb(0, 255, 140);
+    padding: 2px 4px;
+    font-family: 'Comic Sans MS', serif;
+}
+
+#firstname {
+    /* grid-area="Valeur respective par rapport au [grid-template-areas]" en bas */
+    grid-area: i1;
+}
+
+#surname {
+    grid-area: i2;
+}
+
+textarea {
+    grid-area: ta;
+    margin: 2px;
+    height:400px;
+    border: 4px solid rgb(100, 10, 40);
+    font-size: 1.1rem;
+    font-family: 'Comic Sans MS', serif;
+    /* resize="Redimensionner" en bas */
+    resize: none;
+}
+
+input[type="submit"] {
+    grid-area: sb;
+    /* cursor="Désigner la forme que devra prendre la souris au moment désigné"; pointer="Forme du doight qui pointe" en bas */
+    cursor: pointer;
+    background: rgb(9, 80, 0);
+    color:rgb(0, 255, 140);
+    /* transition="Contrôle la vitesse d'animation lorsque les propriétés CSS sont modifiées (Dans notre cas: ":hover")" en bas */
+    transition: 2s;
+}
+
+/* hover="Intéraction lorsque les PROPRIÉTÉS CSS de la souris passe par dessus de l'élément en question, son style change" en bas */
+input[type="submit"]:hover {
+    background: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+}
+
+input[type="number"] {
+    border: 5px solid rgb(170, 200, 30);
+    border-radius: 5px;
+    font-family: 'Comic Sans MS', serif;
+}
+
+/***************** Responsive *****************/
+/* @media screen and (max-width:[...])="Définit ce qui se passera lorsque l'écrand atteindra tant en Largeur (Dans notre cas: Au "Max")" en bas */
+@media screen and (max-width: 680px) {
+    .grid-container {
+        /* block="Apparaît sous l'élément précédent et au-dessus du suivant" en bas */
+        display: block;
+    }
+}
+@media screen and (max-width: 481.5px) {
+    form {
+        grid-template-columns: 1fr;
+        /* Info=[grid-template-rows: 1fr 1fr 1fr 1fr] aurait fonctionné si les balises en question avaient tous la même taille */
+        grid-template-areas: 
+          'i1'
+          'i2'
+          'ta'
+          'sb';
+    }
+}

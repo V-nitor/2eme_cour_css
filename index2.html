@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours CSS</title>
+    <link rel="shortcut icon" href="./Assets/css logo.png">
+    <!-- Relie la feuille de css en question en bas -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Les bases de CSS</h1>
+        </div>
+    </header>
+
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod, eaque ratione veritatis repellat sint corrupti. Odio ea corrupti pariatur rem aut ullam incidunt nisi eius veritatis, ipsa quis soluta suscipit quibusdam doloremque molestiae inventore error assumenda ducimus voluptatum quisquam deleniti nam rerum recusandae neque. Doloribus tempora repellendus exercitationem eum.</p>
+    </main>
+
+    <ol>
+        <li><a href="https://fonts.google.com/" target="_blank">Chercher sur Google Fonts</a></li>
+        <li><a href="https://www.pexels.com/fr-fr/" target="_blank">Chercher sur Pexels</a></li>
+        <li><a href="https://pixabay.com/fr/" target="_blank">Chercher sur Pixabay</a></li>
+        <li><a href="https://unsplash.com/" target="_blank">Chercher sur Unsplash</a></li>
+    </ol>
+
+    <footer>
+
+        <!-- class="Tous les éléments ayant la même classe correspondante auront les même valeurs en commun dans le CSS. À positionner sur la même ligne et à l'intérieur du [div] à classer pour désigner" en bas -->
+        <div class="positioning">
+            <h2>Positioning</h2>
+            <span>relative</span>
+            <!-- id="Pour que cela soit le seul et unique élément spécifique à avoir les modifications suivantes dans le CSS. À positionner sur la même ligne et à l'intérieur de la valeur à identifier pour désigner" en bas -->
+            <!-- Info: [class] c'est pour désigner plusieurs éléments et [id] c'est pour désigner un seul élément spécifique parmi le reste du code -->
+            <span id="circle">absolute</span>
+            <span id="rectangle">absolute</span>
+        </div>
+
+        <div class="flexbox">
+            <h3>Flexbox</h3>
+            <ul>
+                <li id="bg_link"><a href="https://flexbox.help/" target="_blank" id="linkcolor"><strong>https://flexbox.help/</strong></a></li>
+                <li id="bg_link"><a href="https://www.reveillere.fr/M2WEB/sheets/css.pdf" target="_blank" id="linkcolor"><strong>https://www.reveillere.fr/</strong></a></li>
+                <li id="bg_link"><a href="https://cssgenerator.org" target="_blank" id="linkcolor"><strong>https://cssgenerator.org/</strong></a></li>
+            </ul>
+        </div>
+
+        <div class="grid">
+            <h4>Grid</h4>
+            <div class="grid-container">
+                <div class="pict">
+                <!-- Info="La valeur de height par défault en html est en pixel (px)" en bas -->
+                <img src="./Assets/css logo.png" height="200" alt="CSS logo">
+                </div>
+                <form>
+                    <input type="text" id="firstname" placeholder="Votre Prénom">
+                    <input type="text" id="surname" placeholder="Votre Nom">
+                    <textarea cols="20" rows="20" placeholder="Je ne ferais pas le reste de votre formulaire à votre place"></textarea>
+                    <input type="submit" value="Clic sur mon beau corps">
+                </form>
+                <input id="grading" type="number" placeholder="Don pour le plus beau de la planète" min="999999999999999" max="1000000000000000" step="1">
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
